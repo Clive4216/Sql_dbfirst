@@ -22,6 +22,11 @@ namespace Sql_dbfirst
             return _dbSet.ToList();
         }
 
+        public T GetById(object id)
+        {
+            return _dbSet.Find(id);
+        }
+
         public void Add(T entity)
         {
             _dbSet.Add(entity);
@@ -35,6 +40,11 @@ namespace Sql_dbfirst
         public void Save()
         {
             _context.SaveChanges();
+        }
+
+        public void Update(T entity)
+        {
+            _context.Entry(entity).State = EntityState.Modified;
         }
 
     }
