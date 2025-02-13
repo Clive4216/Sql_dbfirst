@@ -160,7 +160,7 @@ namespace Sql_dbfirst
             _staffRepo.Add(staff);
             _staffRepo.Save();
 
-            Console.WriteLine("Student Added Successfully.\n");
+            Console.WriteLine("Staff record Added Successfully.\n");
         }
 
         public void UpdateStaff()
@@ -190,7 +190,7 @@ namespace Sql_dbfirst
 
             _staffRepo.Delete(staff);
             _staffRepo.Save();
-            Console.WriteLine("Teacher Record Deleted Successfully!\n");
+            Console.WriteLine("Staff Record Deleted Successfully!\n");
         }
 
     }
